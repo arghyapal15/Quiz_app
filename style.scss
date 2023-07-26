@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./photo-1670057037226-b3d65909424f.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(8px);
+    color: white;
+}
+
+.container{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    
+    .main{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        border: 2px solid white;
+
+        .col{
+            font-size: 120%;
+            text-align: justify;
+            padding: 15px;
+            text-transform: capitalize;
+            #questionbox{
+                padding: 15px 0;
+            }
+
+            .col_options{
+                font-size: 120%;
+                margin: 15px;
+            }
+        }
+        .button{
+            display: flex;
+            font-weight: 600;
+            justify-content: space-between;
+            margin: 0 20px;
+            button{
+                width: 25%;
+                height: 40px;
+                transition:  all 0.3s;
+                background-color: rgb(47,8,73);
+                color: white;
+                font-size: 100%;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 20px;
+                padding: 10px;
+                cursor: pointer;
+                border-inline: 2px solid red;
+            }
+            button:hover{
+                background-color: rgb(183, 105, 235);
+            }
+        }
+    }
+    .score{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 150%;
+
+        button{
+                margin: 2rem;
+                width: 20%;
+                height: 40px;
+                transition:  all 0.3s;
+                background-color: rgb(47,8,73);
+                color: white;
+                font-size: 100%;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 20px;
+                padding: 10px;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: rgb(175, 159, 186);
+            }
+    }
+}
