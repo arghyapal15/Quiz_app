@@ -33,6 +33,15 @@ const quizData = [
     }
 ];
 
+// let my;
+// fetch('./question.json')
+//     .then((response) => response.json())
+//     .then((json) => {
+//         my = json;
+//     });
+
+// import d from './data.json';
+// console.log(json.quizD+"hi");
 let index = 0;
 let correct = 0, incorrect = 0, total = quizData.length;
 let questionBox = document.getElementById("questionbox");
